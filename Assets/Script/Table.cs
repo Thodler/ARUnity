@@ -25,7 +25,6 @@ public class Table : MonoBehaviour
     public void NouvelleCible()
     {
         ciblesTouches++;
-        print(ciblesTouches);
         if (ciblesTouches % cibles.Count == 0)
         {
             print("Toutes les cibles sont tombé.");

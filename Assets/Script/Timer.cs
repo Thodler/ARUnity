@@ -1,7 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class Timer : MonoBehaviour
@@ -38,9 +36,6 @@ public class Timer : MonoBehaviour
         {
             timer.gameObject.SetActive(false);
             ObjectSpawner.Instance.enableSpawn = true;
-            
-            PlayerPrefs.SetInt("Score", Table.Instance.ciblesTouches);
-            
             
             Destroy(Table.Instance.gameObject);
             elapsedTime = 59f;

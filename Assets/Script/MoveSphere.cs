@@ -17,7 +17,7 @@ public class MoveSphere : MonoBehaviour
     
     void PositionSphere()
     {
-        var maxInclusive = 1f;
+        var maxInclusive = 0.5f;
         randomPosition = new Vector3(Random.Range(-maxInclusive, maxInclusive), transform.position.y, Random.Range(-maxInclusive, maxInclusive));
     }
 }

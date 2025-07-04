@@ -19,7 +19,6 @@ public class CibleIndividuelle : MonoBehaviour
     {
         if (gameObject.tag == "Balle" && other.gameObject.tag == "Balle")
         {
-            print(other.gameObject);
             if(down) return;
             
             down = true;
