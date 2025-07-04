@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public TMP_Text scoreText;
-    private const string LABEL = "score";
+    private const string LABEL = "record";
 
     private void EditScore()
     {
@@ -29,6 +29,6 @@ public class ScoreManager : MonoBehaviour
             scoreSave = Table.Instance.ciblesTouches;
         }
         
-        PlayerPrefs.SetInt("record", scoreSave);
+        PlayerPrefs.SetInt(LABEL, scoreSave);
     }
 }
